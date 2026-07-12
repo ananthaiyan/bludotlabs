@@ -1,0 +1,82 @@
+import type { Metadata } from 'next';
+import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'About — Bludot Labs',
+  description: 'Bludot Labs is an engineering-led AI studio. Meet the team behind the systems.',
+};
+
+const team = [
+  { initial: 'A', name: 'Ananthaiyan', role: 'Founder & CEO — Product strategy, client engagements' },
+  { initial: 'R', name: 'Rashim', role: 'Co-Founder & CTO — Systems architecture, infrastructure' },
+  { initial: 'A', name: 'Allen', role: 'Co-Founder & CCO — Client operations, delivery' },
+];
+
+export default function AboutPage() {
+  return (
+    <main>
+      <section className="page-hero">
+        <div className="blueprint" />
+        <div className="hero-glow" />
+        <div className="wrap">
+          <p className="eyebrow">THE TEAM</p>
+          <h1>Engineers, Not an Agency</h1>
+          <p>Enterprise buyers work with people first. This is who&apos;s in the room from discovery through deployment.</p>
+        </div>
+      </section>
+
+      <section className="about" style={{ paddingTop: '80px' }}>
+        <div className="wrap">
+          <div className="about-grid">
+            <div className="founder-note">
+              <p>Bludot Labs is engineering-led by design. Every product in this portfolio — atCampus, Balaji Dental, Frenzo — was built hands-on by the founding team before it was ever pitched to a client.</p>
+              <p>That&apos;s still how the studio operates today: someone from the founding team sits in on the workflow mapping for every engagement, before a single line of the system gets designed. We&apos;d rather hand you a working pilot than a slide deck.</p>
+              <p>Our thesis: the best software for operational industries gets built by people who&apos;ve spent time understanding the operational reality — not people who study the slide deck and ship a generic ERP.</p>
+            </div>
+            <div className="team-roster">
+              {team.map((member) => (
+                <div key={member.name} className="team-row">
+                  <span className="avatar">{member.initial}</span>
+                  <div className="team-info">
+                    <p className="team-name">{member.name}</p>
+                    <p className="team-role">{member.role}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="page-section-alt" style={{ marginTop: '80px' }}>
+        <div className="wrap">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: '0', borderTop: '1px solid var(--line)' }}>
+            {[
+              { label: 'Founded', value: '2024' },
+              { label: 'Deployments', value: '3 Live Systems' },
+              { label: 'Sectors', value: 'Healthcare · Education · Logistics' },
+              { label: 'Model', value: 'Engineering-Led Studio' },
+            ].map((item) => (
+              <div key={item.label} style={{ padding: '32px', borderRight: '1px solid var(--line)' }}>
+                <p style={{ fontFamily: 'var(--mono)', fontSize: '10px', color: 'var(--ink-2)', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '12px' }}>{item.label}</p>
+                <p style={{ fontFamily: 'var(--display)', fontSize: '15px', fontWeight: '600', color: 'var(--ink-0)' }}>{item.value}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="final-cta">
+        <div className="blueprint" />
+        <div className="hero-glow" />
+        <div className="wrap">
+          <p className="eyebrow" style={{ justifyContent: 'center' }}>WORK WITH US</p>
+          <h2 style={{ marginTop: '24px' }}>Let&apos;s talk about what you&apos;re building.</h2>
+          <div className="hero-ctas">
+            <Link href="/contact" className="btn btn-primary">Start a Conversation <span className="arrow">→</span></Link>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

@@ -232,7 +232,11 @@ export default function Home() {
           <h2 style={{ marginTop: '24px' }}>Let&apos;s find the bottleneck costing you the most.</h2>
           <p>We start with a workflow audit — a structured session where we map how work actually moves through your operation. No pitch. No proposals. Just an honest look at where the friction is.</p>
           <div className="hero-ctas">
-            <Link href="/contact" className="btn btn-primary">Request a Workflow Audit <span className="arrow">→</span></Link>
+            <Link
+              href="/contact"
+              className="btn btn-primary">
+              Request a Workflow Audit
+              <span className="arrow">→</span></Link>
             <a href="mailto:hello@bludotlabs.com" className="btn btn-ghost">hello@bludotlabs.com</a>
           </div>
         </div>

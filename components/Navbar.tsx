@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -48,38 +49,37 @@ export default function Navbar() {
           </nav>
 
           {!scrolled && (
-            <Link href="/contact" className="btn btn-primary">Get in touch <span className="arrow">→</span></Link>
+            <Link href="/contact" className="btn btn-primary">Request Audit <span className="arrow">→</span></Link>
           )}
 
 
           <button
-            className="mobile-menu"
+            className="mobile-menu-btn"
             onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
           >
             ☰
           </button>
         </div>
       </header>
 
-      {menuOpen && (
-        <div className="mobile-menu">
-          {[
-            ["Solutions", "/solutions"],
-            ["Case Studies", "/case-studies"],
-            ["Products", "/products"],
-            ["Research", "/research"],
-            ["About", "/about"],
-            ["Contact", "/contact"],
-          ].map(([name, href]) => (
-            <Link
-              key={href}
-              href={href}
-            >
-              {name}
-            </Link>
-          ))}
-        </div>
-      )}
+      <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
+        {[
+          ["Solutions", "/solutions"],
+          ["Case Studies", "/case-studies"],
+          ["Products", "/products"],
+          ["Research", "/research"],
+          ["About", "/about"],
+          ["Contact", "/contact"],
+        ].map(([name, href]) => (
+          <Link
+            key={href}
+            href={href}
+          >
+            {name}
+          </Link>
+        ))}
+      </div>
     </>
   );
 } 

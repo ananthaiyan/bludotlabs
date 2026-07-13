@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { MagneticButton } from "./ui/magnetic-button";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

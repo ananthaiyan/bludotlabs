@@ -3,48 +3,48 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "Balaji Dental Care — Case Study | Bludot Labs",
+    title: "Alliance Freight Express — Case Study | Bludot Labs",
     description:
-        "How Bludot Labs engineered an AI-powered patient reactivation and financial operations system for Balaji Dental Care.",
+        "How Bludot Labs partnered with Alliance Freight Express to redesign freight forwarding operations and lay the foundation for Wareabouts.",
 };
 
 const metrics = [
-    { value: "21", label: "Days to Deployment" },
-    { value: "₹60K+", label: "Recovered Revenue" },
-    { value: "1", label: "Clinic" },
-    { value: "100%", label: "Custom Workflow" },
+    { value: "15+", label: "Years in Business" },
+    { value: "200+", label: "Countries Served" },
+    { value: "1", label: "Discovery Partner" },
+    { value: "2026", label: "Research Started" },
 ];
 
 const capabilities = [
     {
-        title: "Patient Reactivation",
+        title: "Operational Discovery",
         description:
-            "Automatically identifies inactive patients and initiates personalized outreach campaigns.",
+            "Mapped end-to-end freight forwarding workflows from exporter onboarding to international delivery.",
     },
     {
-        title: "Financial Dashboard",
+        title: "Workflow Standardization",
         description:
-            "Daily visibility into treatment revenue, collections, outstanding payments and business performance.",
+            "Documented operational SOPs across documentation, customs, carrier selection and shipment coordination.",
     },
     {
-        title: "Treatment Tracking",
+        title: "Operations Dashboard",
         description:
-            "Centralized treatment history, pending procedures and patient-level financial records.",
+            "Designed a centralized workspace to replace fragmented spreadsheets, emails and manual coordination.",
     },
     {
-        title: "Operational Reporting",
+        title: "Documentation Intelligence",
         description:
-            "Practice-level dashboards replacing fragmented spreadsheets and manual reporting.",
+            "Researched AI-assisted handling of export documentation, compliance and shipment records.",
     },
     {
-        title: "Custom Workflows",
+        title: "Carrier Coordination",
         description:
-            "Designed around the clinic's existing operational processes rather than forcing new ones.",
+            "Studied decision-making between DHL, FedEx, airlines and shipping lines to standardize shipment planning.",
     },
     {
-        title: "Foundation for AI",
+        title: "Foundation for Wareabouts",
         description:
-            "Built as the first step toward autonomous practice operations through Dentura.",
+            "Customer discovery that became the first real-world validation for Wareabouts' logistics thesis.",
     },
 ];
 
@@ -60,15 +60,16 @@ export default function Page() {
                 <div className="wrap">
 
                     <p className="eyebrow">
-                        CASE STUDY · HEALTHCARE
+                        CASE STUDY · LOGISTICS
                     </p>
 
                     <h1
                         style={{
-                            maxWidth: 900,
+                            maxWidth: 920,
                         }}
                     >
-                        Engineering Operational Intelligence for Balaji Dental Care
+                        Understanding Freight Forwarding Operations Through Alliance Freight
+                        Express
                     </h1>
 
                     <p
@@ -78,9 +79,10 @@ export default function Page() {
                             color: "var(--muted)",
                         }}
                     >
-                        Bludot Labs partnered with Balaji Dental Care to digitize patient
-                        operations, improve financial visibility and lay the foundation for
-                        AI-native clinical workflows through Dentura.
+                        Rather than beginning with software, we began with operators.
+                        Alliance Freight Express became our first logistics discovery
+                        partner, helping us understand how international freight forwarding
+                        actually works and where operational intelligence can create value.
                     </p>
 
                     <div
@@ -92,8 +94,8 @@ export default function Page() {
                         }}
                     >
                         <Image
-                            src="/balajidental.png"
-                            alt="Dentura Dashboard"
+                            src="/wareabouts.png"
+                            alt="Wareabouts Logistics Research"
                             width={1600}
                             height={900}
                             style={{
@@ -156,6 +158,7 @@ export default function Page() {
                         gap: 80,
                     }}
                 >
+
                     <div>
 
                         <p className="eyebrow">
@@ -163,7 +166,7 @@ export default function Page() {
                         </p>
 
                         <h1>
-                            Valuable patient relationships were being lost after treatment.
+                            Freight forwarding is fundamentally a coordination problem.
                         </h1>
 
                     </div>
@@ -171,17 +174,19 @@ export default function Page() {
                     <div>
 
                         <p>
-                            Balaji Dental Care relied on manual spreadsheets, phone calls and
-                            disconnected records to manage patient follow-ups and financial
-                            operations.
+                            Modern freight forwarders coordinate exporters, customs brokers,
+                            airlines, shipping lines and overseas agents through fragmented
+                            systems including spreadsheets, emails, WhatsApp and multiple
+                            carrier portals.
                         </p>
 
                         <br />
 
                         <p>
-                            Patients requiring periodic reviews often went months without
-                            follow-up, while practice owners lacked a centralized view of
-                            revenue, pending treatments and business performance.
+                            Every shipment involves documentation, compliance, carrier
+                            selection, customer communication and operational decision-making,
+                            yet much of this process remains manual despite decades of digital
+                            transformation across logistics.
                         </p>
 
                     </div>
@@ -190,14 +195,14 @@ export default function Page() {
 
             </section>
 
-            {/* SOLUTION */}
+            {/* APPROACH */}
 
             <section className="page-section">
 
                 <div className="wrap">
 
                     <p className="eyebrow">
-                        THE SOLUTION
+                        OUR APPROACH
                     </p>
 
                     <h2
@@ -205,7 +210,7 @@ export default function Page() {
                             marginBottom: 60,
                         }}
                     >
-                        A custom operational platform built around the clinic.
+                        Start with workflows, not software.
                     </h2>
 
                     <div
@@ -241,18 +246,18 @@ export default function Page() {
 
             </section>
 
-            {/* RESULTS */}
+            {/* DISCOVERIES */}
 
             <section className="page-section">
 
                 <div className="wrap">
 
                     <p className="eyebrow">
-                        OUTCOMES
+                        KEY DISCOVERIES
                     </p>
 
                     <h2>
-                        Immediate operational improvements.
+                        What we learned from customer discovery.
                     </h2>
 
                     <div
@@ -267,13 +272,13 @@ export default function Page() {
                         <div>
 
                             <h3>
-                                Revenue recovered through patient reactivation
+                                Freight forwarders coordinate information—not trucks.
                             </h3>
 
                             <p>
-                                Automated identification of inactive patients enabled the clinic
-                                to reconnect with existing patients, generating more than
-                                ₹60,000 in additional revenue within the initial deployment.
+                                The greatest operational complexity lies in documentation,
+                                compliance, carrier selection and communication rather than
+                                physical transportation itself.
                             </p>
 
                         </div>
@@ -281,13 +286,13 @@ export default function Page() {
                         <div>
 
                             <h3>
-                                Better operational visibility
+                                Existing software solves records—not decisions.
                             </h3>
 
                             <p>
-                                Financial reporting, treatment tracking and patient management
-                                moved into a centralized platform, reducing dependence on
-                                fragmented spreadsheets and manual reporting.
+                                Operators still make critical decisions manually every day.
+                                Coordinating multiple stakeholders remains largely dependent on
+                                human experience rather than operational intelligence.
                             </p>
 
                         </div>
@@ -310,12 +315,12 @@ export default function Page() {
 
                     <div
                         style={{
-                            maxWidth: 900,
+                            maxWidth: 920,
                         }}
                     >
 
                         <h2>
-                            This project became the foundation for Dentura.
+                            This became the foundation of Wareabouts.
                         </h2>
 
                         <p
@@ -324,12 +329,13 @@ export default function Page() {
                                 lineHeight: 1.9,
                             }}
                         >
-                            What began as a custom software engagement evolved into a broader
-                            product vision. The operational patterns discovered while working
-                            closely with Balaji Dental Care became the foundation for
-                            Dentura—Bludot's healthcare operations platform focused on
-                            practice management, AI workflows and intelligent clinical
-                            operations.
+                            Rather than building another transportation management system,
+                            this research fundamentally changed our understanding of logistics.
+                            We realized the industry's biggest opportunity wasn't moving
+                            freight—it was coordinating it. That insight evolved into
+                            Wareabouts: an operational intelligence platform designed to become
+                            the coordination layer between enterprises, freight forwarders,
+                            carriers and global supply chains.
                         </p>
 
                     </div>
@@ -345,7 +351,7 @@ export default function Page() {
                 <div className="wrap">
 
                     <p className="eyebrow">
-                        ENGINEERING STACK
+                        RESEARCH AREAS
                     </p>
 
                     <div
@@ -357,19 +363,20 @@ export default function Page() {
                     >
 
                         {[
-                            "Next.js",
-                            "FastAPI",
-                            "PostgreSQL",
-                            "Supabase",
-                            "Tailwind CSS",
-                            "AWS",
-                        ].map((tech) => (
+                            "Freight Forwarding",
+                            "International Logistics",
+                            "Customs",
+                            "Carrier Networks",
+                            "Operational Intelligence",
+                            "Workflow Automation",
+                            "AI Systems",
+                        ].map((item) => (
 
                             <span
-                                key={tech}
+                                key={item}
                                 className="tag"
                             >
-                                {tech}
+                                {item}
                             </span>
 
                         ))}
@@ -390,12 +397,12 @@ export default function Page() {
                 <div className="wrap">
 
                     <p className="eyebrow">
-                        READY TO MODERNIZE YOUR PRACTICE?
+                        BUILDING THE FUTURE OF LOGISTICS
                     </p>
 
                     <h2>
-                        Let's engineer software around your workflows—not the other way
-                        around.
+                        We're working with logistics operators to engineer the next
+                        generation of freight operations.
                     </h2>
 
                     <div className="hero-ctas">
@@ -404,7 +411,7 @@ export default function Page() {
                             href="/contact"
                             className="btn btn-primary"
                         >
-                            Book a Discovery Call
+                            Talk to Our Team
                             <span className="arrow">→</span>
                         </Link>
 

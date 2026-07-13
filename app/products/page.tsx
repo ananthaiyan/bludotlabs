@@ -151,10 +151,10 @@ export default function ProductsPage() {
               index="A2"
               name="SWACHORBIT"
               status="ARCHIVE"
-              headline="Municipal operations platform"
-              description="Geospatial planning and operational intelligence for municipal waste collection and civic infrastructure."
-              href="/engineering-archive"
-              linkLabel="Explore Archive"
+              headline="Orbital debris intelligence platform"
+              description="Interactive mission planning dashboard for monitoring orbital debris and evaluating accelerated deorbiting strategies. Originally conceptualized as a space sustainability initiative and awarded First Prize at IIT Madras."
+              href="https://swachorbit.bludotlabs.com"
+              linkLabel="Launch Platform"
             />
 
             <ProductCard

@@ -21,15 +21,15 @@ const archived = [
     ],
   },
   {
-    code: 'A2',
-    name: 'SwachOrbit',
-    year: '2024',
+    code: "A2",
+    name: "SwachOrbit",
+    year: "2023",
     description:
-      'Smart waste management platform designed to improve municipal collection planning using geospatial visualization, routing intelligence, and operational dashboards.',
+      "An orbital debris mitigation concept that won First Prize at IIT Madras. Today, SwachOrbit exists as a live interactive dashboard for monitoring space debris, visualizing orbital decay, and exploring mission planning for sustainable deorbiting of defunct satellites.",
     learnings: [
-      'GIS and spatial data visualization',
-      'Operational planning for civic infrastructure',
-      'Working with government-oriented workflows',
+      "Orbital mechanics and debris modelling",
+      "Mission planning for active debris removal",
+      "Interactive aerospace data visualization",
     ],
   },
   {

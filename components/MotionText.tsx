@@ -1,7 +1,7 @@
 'use client';
 
-import { motion } from 'motion/react';
 import { ReactNode } from 'react';
+import { delay, motion, type Variants } from "motion/react";
 
 interface MotionTextProps {
   children: ReactNode;
@@ -33,31 +33,32 @@ export default function MotionText({ children, tag = 'p', className = '', delay 
 
   const words = children.split(' ');
 
-  const container = {
-    hidden: { opacity: 0 },
-    visible: (i = 1) => ({
+
+
+  const container: Variants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.04, delayChildren: delay * 0.5 },
-    }),
+      transition: {
+        staggerChildren: 0.04,
+        delayChildren: delay * 0.5,
+      },
+    },
   };
 
-  const child = {
+  const child: Variants = {
+    hidden: {
+      opacity: 0,
+      y: 20,
+    },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        type: 'spring',
-        damping: 24,
-        stiffness: 150,
-      },
-    },
-    hidden: {
-      opacity: 0,
-      y: 20,
-      transition: {
-        type: 'spring',
-        damping: 24,
-        stiffness: 150,
+        duration: 0.45,
+        ease: [0.22, 1, 0.36, 1],
       },
     },
   };

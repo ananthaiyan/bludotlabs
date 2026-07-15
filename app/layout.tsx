@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollObserver from "@/components/ScrollObserver";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bludotlabs.com"),
@@ -147,6 +148,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <ScrollObserver />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

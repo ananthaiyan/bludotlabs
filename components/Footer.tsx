@@ -40,7 +40,7 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <p>© 2026 BLUDOT LABS</p>
-          <p><Link href="#">Privacy</Link> · <Link href="#">Terms</Link> · SYSTEM STATUS: ONLINE</p>
+          <p><Link href="/privacy">Privacy</Link> · <Link href="/terms">Terms</Link> · SYSTEM STATUS: ONLINE</p>
         </div>
       </div>
     </footer>

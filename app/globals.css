@@ -13,8 +13,8 @@
   --bg-1: #0D121A;
   --bg-2: #121826;
   --bg-3: #161E2E;
-  --line: rgba(255, 255, 255, 0.08);
-  --line-strong: rgba(255, 255, 255, 0.14);
+  --line: rgba(255, 255, 255, 0.05);
+  --line-strong: rgba(255, 255, 255, 0.10);
   --blue: #3D7FFF;
   --blue-dim: #2C5FCC;
   --blue-glow: rgba(61, 127, 255, 0.35);
@@ -127,8 +127,8 @@ h2,
 h3,
 h4 {
   font-family: var(--display);
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-weight: 600;
+  letter-spacing: -0.03em;
   color: var(--ink-0);
 }
 
@@ -142,8 +142,9 @@ h4 {
 }
 
 .section-head h2 {
-  font-size: clamp(28px, 3vw, 42px);
-  line-height: 1.15;
+  font-size: clamp(28px, 3.5vw, 46px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
 .section-head p {
@@ -183,7 +184,7 @@ section {
   -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 85%);
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 85%);
   pointer-events: none;
-  opacity: 0.5;
+  opacity: 0.35;
 }
 
 .coord {
@@ -457,9 +458,10 @@ header.nav {
 }
 
 .hero h1 {
-  font-size: clamp(40px, 5.6vw, 76px);
-  line-height: 1.04;
-  max-width: 15ch;
+  font-size: clamp(42px, 6vw, 84px);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  max-width: 16ch;
 }
 
 .hero h1 .accent {
